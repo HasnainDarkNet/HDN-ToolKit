@@ -14,6 +14,37 @@ HDN Phish is a professional cybersecurity awareness tool designed for authorized
 
 ---
 
+# Install Cloudflared on Kali Linux
+
+This guide shows how to install **Cloudflared** on **Kali Linux**.
+
+## Step 1: Download Cloudflared
+
+```bash
+wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+```
+
+## Step 2: Install Cloudflared
+
+```bash
+sudo dpkg -i cloudflared-linux-amd64.deb
+```
+
+## Step 3: Fix Dependencies (If Needed)
+
+```bash
+sudo apt --fix-broken install
+```
+
+## Step 4: Verify Installation
+
+```bash
+cloudflared --version
+```
+
+If the version is displayed, Cloudflared has been installed successfully.
+
+
 ## 🔥 Features
 
 - **9+ Social Media Platforms** - Instagram, Facebook, Google, Twitter, LinkedIn, Snapchat, GitHub, Netflix, TikTok
